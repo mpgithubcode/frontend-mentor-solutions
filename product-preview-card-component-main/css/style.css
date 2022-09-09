@@ -1,0 +1,118 @@
+:root {
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-size: 14px;
+
+  --font-Montserat: 'Montserrat', sans-serif;
+  --medium-500: 500;
+  --bold-700: 700;
+
+  --font-Fraunces: 'Fraunces', serif;
+}
+
+* {
+  background-color: var(--cream);
+  size: var(--Desktop);
+}
+
+body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  border-radius: 10px;
+  max-width: 650px;
+  margin: auto;
+  overflow: hidden;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+img {
+  height: 100%;
+  width: 300px;
+}
+ 
+.text {
+  background-color: var(--white);
+  margin: 30px
+}
+
+.pricing {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+p, h1, button {
+  background-color: inherit;
+  color: var(--dark-grayish-blue);
+  font-family: var(--font-Montserat);
+  font-weight: var(--medium-500);
+}
+
+.category {
+  font-family: var(--font-Montserat);
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  letter-spacing: 3px;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  font-family: var(--font-Fraunces);
+  font-weight: var(--bold-700);
+  font-size: 40px;
+}
+
+.price {
+  color: var(--dark-cyan);
+  font-weight: var(--bold-700);
+  font-size: 30px;
+  font-family: var(--font-Fraunces);
+}
+
+.discount {  
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+button {
+  background-color: var(--dark-cyan);
+  color: var(--cream);
+  font-weight: var(--bold-700);
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 15px;
+  width: 15px; 
+  margin-right: 5px;
+  background-color: inherit;
+}
+
+
