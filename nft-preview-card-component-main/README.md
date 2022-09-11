@@ -62,6 +62,10 @@ furthering my understanding of the flexbox and positioning
 ### Useful resources
 
 [Line (horizontal rule)](https://www.w3schools.com/howto/howto_css_style_hr.asp)
+[Media Queries](https://www.youtube.com/watch?v=2KL-z9A56SQ)
+[auto resize an image to fit in a div](https://stackoverflow.com/questions/3029422/how-do-i-auto-resize-an-image-to-fit-a-div-container)
+[wrap text to new line](https://www.makeuseof.com/css-text-wrap/)
+
 ## Author
 
 Mario Perry @mpgithubcode
