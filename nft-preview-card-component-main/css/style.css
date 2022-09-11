@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-size-paragraph: 15px;
+
+  --family: 'Outfit', sans-serif;
+  --weight-light: 300;
+  --weight-medium: 400;
+  --weight-bold: 600;
+}
+
+html {
+  size: var(--desktop);
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--family);
+  font-size: var(--font-size-paragraph);
+  color: var(--soft-blue);
+  background-color: var(--very-dark-blue-main-bg);
+
+}
+
+main {
+  width: 320px;
+  height: 500px;
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--weight-light);
+  overflow: hidden;
+  border-radius: 10px;
+
+  background-color: var(--very-dark-blue-card-bg);
+
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  margin: 20px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+  height: 350px;
+}
+
+.image img {
+  border-radius: 10px;
+  flex: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text {
+  flex: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+  line-height: 14px;
+}
+
+.text h1 {
+  color: var(--white);
+  font-weight: var(--weight-bold);
+  font-size: 20px;
+}
+
+p {
+  font-size: var(--font-size-paragraph);
+  margin: auto;
+}
+
+.price-date, .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eth {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.eth-logo {
+  height: 100%;
+}
+.price {
+  padding-left: 10px;
+  color: var(--cyan);
+  font-weight: var(--weight-bold);
+}
+
+.date {
+  font-weight: var(--weight-medium);
+  justify-self: end;
+}
+
+hr {
+  border: 1px solid var(--soft-blue);
+  width: 100%;
+  margin: auto;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-img-container{
+  max-height: 30px;
+  max-width:  30px;
+  display: flex;
+}
+
+.social-img {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--soft-blue);
+}
+
+.creation {
+  display: flex;
+  margin-left: 10px;
+}
+
+@media (min-width: var(--mobile)) {
+
+
+}
