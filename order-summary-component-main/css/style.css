@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --font-size-paragraph: 16px;
+
+  --font-family: 'Red Hat Display', sans-serif;
+
+  --weights-normal: 500; 
+  --weights-bold: 700; 
+  --weights-strong: 900;
+}
+
+html {
+  position: relative;
+  z-index: 10;
+  background-color: var(--pale-blue);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+}
+
+body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--mobile);
+}
+
+main {
+  max-width: var(--desktop);
+  font-family: var(--font-family);
+  color: var(--dark-blue);
+  display: flex;
+  justify-items: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 3%;
+  width: 450px;
+  height: 700px;
+  overflow: hidden;
+  box-shadow: 5px 50px 50px 2px rgba(0, 0, 0, 0);
+}
+
+.content {
+  padding: 20px 50px 0px 50px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: var(--weights-strong);
+}
+
+p {
+  line-height: 2rem;
+  color: var(--desaturated-blue);
+}
+
+.pricing {
+  background-color: var(--very-pale-blue);
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-family);
+  color: var(--desaturated-blue);
+  margin-bottom: 10px;
+}
+
+.pricing h2 {
+  color: var(--dark-blue);
+  font-size: var(--font-family);
+}
+
+.pricing img {
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.pricing .Change {
+    display: flex;
+    margin-left: 20%;
+}
+
+.annual-plan {
+  display: flex;
+  flex-direction: column;
+}
+
+.Payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: var(--weights-strong);
+}
+
+button {
+  margin-top: 20px;
+  font-weight: var(--weights-strong);
+  color: white;
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  height: 50px;
+  box-shadow: 50px 250px;
+}
+
+.Cancel {
+  margin-top: 20px;
+  font-weight: var(--weights-bold);
+}
